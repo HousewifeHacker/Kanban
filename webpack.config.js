@@ -1,6 +1,5 @@
 var path = require('path');
 var HtmlwebpackPlugin = require('html-webpack-plugin');
-var webpack = require('webpack');
 
 var ROOT_PATH = path.resolve(__dirname);
 
@@ -17,7 +16,6 @@ module.exports = {
     progress: true
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlwebpackPlugin({
       title: 'Kanban app'
     })
